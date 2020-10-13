@@ -1,0 +1,65 @@
+.backgroundVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.centered {
+    justify-content: center;
+    margin-top: 250px;
+    color: white;
+    font-size: 4.5vw;
+    text-align: center;
+
+    animation-delay: 2s;
+}
+.centeredNew {
+    justify-content: center;
+    margin-top: 10;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    
+    animation-delay: 3s;
+}
+
+
+.backgroundVideo {
+    height: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snow {
+    animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .centered {
+    justify-content: center;
+    margin-top: 250px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+    animation-delay: 2s;
+}
+.centeredNew {
+    justify-content: center;
+    margin-top: 10;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    
+    animation-delay: 3s;
+}
+}
