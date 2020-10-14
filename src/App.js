@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import  {useDarkMode} from "./components/useDarkMode"
+import Toggle from "./components/toggler";
+
 import './App.css';
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./components/globalStyles";
+import { lightTheme, darkTheme } from "./components/themes"
 
 function App() {
+   const [theme, themeToggler] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={themeMode}>
+      <>
+      <GlobalStyles/>
+        <div className="App">
+        <Toggle theme={theme} toggleTheme={themeToggler} />          
+        </div>
+      </>
+    </ThemeProvider>
+    
   );
 }
 

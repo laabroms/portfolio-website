@@ -1,0 +1,15 @@
+.image {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.containImage {
+    width: 80%;
+    margin: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+

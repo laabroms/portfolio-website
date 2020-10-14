@@ -19,7 +19,7 @@ class Home extends Component {
     };
   }
   componentDidMount() {
-    document.title = "Home - Lucas Abroms";
+    document.title = "Welcome - Lucas Abroms";
     
   }
 
@@ -80,7 +80,6 @@ class Home extends Component {
             </DelayLink>
           </div>
 
-          {/* <BootstrapNav /> */}
         </>
       );
     }

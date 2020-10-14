@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./screens/home";
 import About from './screens/about';
 import Contact from "./screens/contact";
+import Resume from "./screens/resume";
 
 export default function Routes() {
   return (
@@ -21,6 +22,9 @@ export default function Routes() {
           </Route>
           <Route path="/contact" exact>
             <Contact />
+          </Route>
+          <Route path="/resume" exact>
+            <Resume />
           </Route>
           
         </Switch>

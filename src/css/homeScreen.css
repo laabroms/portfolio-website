@@ -52,12 +52,12 @@
     background-color: transparent;
     color: white;
     border: 1px solid white;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 30px;
     transition: 1s;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
 }
 .button:hover {
@@ -65,13 +65,13 @@
     background-color: white;
     color: rgb(97, 97, 97);
     border: 1px solid white;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 30px;
     transition: 1s;
     text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
 
 }
@@ -114,10 +114,10 @@
         font-size: 23px;
         color: white;
         border: 1px solid white;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 4px;
+        padding-bottom: 4px;
 
     }
     .button:hover {
@@ -126,11 +126,11 @@
         font-size: 23px;
         color: rgb(97, 97, 97);
         border: 1px solid white;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
         text-decoration: none;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 4px;
+        padding-bottom: 4px;
 
     }
 }

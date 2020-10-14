@@ -15,7 +15,7 @@ export default class BootstrapNav extends React.Component {
   componentDidMount() {
     this.listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 210) {
+      if (scrolled >= 90) {
         if (this.state.status !== "transparent") {
           this.setState({ status: "transparent" });
         }
@@ -32,15 +32,17 @@ export default class BootstrapNav extends React.Component {
   }
 
   render() {
-        var colorLogo = this.state.status === 'blue' ? "logoNew" : "logoBlue";
+        var colorLogo = this.state.status === 'blue' ? "logoBlack" : "logoWhite";
+        var variantColor = this.state.status === 'blue' ? "light" : "dark";
 
     return (
       <Navbar
         // bg={this.state.status === "blue" ? "blue" : ""}
+        variant={variantColor}
         sticky="top"
         expand="md"
         style={{
-          backgroundColor: this.state.status === "blue" ? "#089cff" : "",
+          backgroundColor: this.state.status === "blue" ? "" : "black",
           color: this.state.status === "blue" ? "black" : "white",
           transition: "0.3s",
         }}
@@ -49,32 +51,39 @@ export default class BootstrapNav extends React.Component {
         <Navbar.Brand
           href="/"
           style={{
-            color: this.state.status === "blue" ? "white" : "white",
+            color: this.state.status === "blue" ? "#23265a" : "white",
           }}
         >
           <img
             src={require(`../images/${colorLogo}.png`)}
             alt={require(`../images/${colorLogo}.png`)}
-            style={{ width: 250 }}
+            className='animate__animated animate__rotateInDownLeft'
+            style={{ width: 65, transition: "0.3s", }}
           ></img>
+          {/* <img
+            src={require('../images/orangeLogo.png')}
+            alt={require('../images/orangeLogo.png')}
+            className='animate__animated animate__rotateInDownLeft'
+            style={{ width: 65 }}
+          ></img> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link
+            {/* <Nav.Link
               href="/"
               style={{
                 paddingLeft: 20,
-                color: this.state.status === "blue" ? "white" : "#089cff",
+                color: this.state.status === "blue" ? "#23265a" : "white",
               }}
             >
               Home
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="/about"
               style={{
                 paddingLeft: 20,
-                color: this.state.status === "blue" ? "white" : "#089cff",
+                color: this.state.status === "blue" ? "#23265a" : "white",
               }}
             >
               About

@@ -14,6 +14,114 @@
     text-align: center;
     font-size: 28px;
     margin-top: 10px;
-    color: #089cff;
+    color: #23265a;
     font-weight: bold;
+}
+
+.body {
+    background: linear-gradient(transparent, #23265a);
+    height: 2000px;
+    width: 100%;
+
+}
+.rowAbout {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+
+
+
+.rowStyle  {
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    padding-top: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+.subHeading {
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+}
+
+
+
+.smallerHeading {
+    color: #787878;
+    font-size: 25px;
+}
+
+.infoText {
+    color: #787878;
+    font-size: 17px;
+}
+
+.cellRegion {
+    margin-left: 3%;
+    margin-right: 7%;
+    width: 100%;
+    height: 80vh;
+}
+.cellRegionImage {
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+    /* display: block; */
+    
+    width: 100%;
+    height: 80vh;
+}
+
+.buttonResume {
+    align-items: center;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #f57e0c;
+    border: 1px solid #f57e0c;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    transition: 1s;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+.buttonResume:hover {
+    border-radius: 25px;
+    background-color: #f57e0c;
+    color: white;
+    border: 1px solid #f57e0c;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    transition: 1s;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+
+}
+
+.projectsText {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 600px) {
+   .buttonDiv {
+       margin-top: 10px;
+       text-align: center;
+   }
 }
