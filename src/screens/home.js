@@ -3,28 +3,24 @@ import React, { Component } from 'react';
 // import FadeIn from 'react-fade-in'
 import sample from "../images/backgroundNew.mp4";
 import sample1 from "../images/backgroundNew.webm";
-import '../components/backgroundVideo.css';
+import '../css/homeScreen.css';
 import 'animate.css';
 import DelayLink from "react-delay-link";
 
 
 
 // import Snowfall from "react-snowfall";
-import {Spinner} from 'react-bootstrap';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loaded: false,
       fadeIn: true
     };
   }
   componentDidMount() {
     document.title = "Home - Lucas Abroms";
-    this.setState({
-      loaded: true,
-    });
+    
   }
 
   handleClick = () => {
@@ -45,13 +41,11 @@ class Home extends Component {
       ? "centeredButton animate__animated animate__fadeIn animate__delay-4s"
       : "centeredButton animate__animated animate__fadeOut";
     var backgroundVideoClass = this.state.fadeIn
-      ? "backgroundVideo"
+      ? "backgroundVideo animate__animated animate__fadeIn"
       : "backgroundVideo animate__animated animate__fadeOut animate__delay-1s";
 
 
-    if (this.state.loaded === false) {
-      return <Spinner />;
-    } else if (this.state.loaded === true) {
+   
       return (
         <>
           {/* <Snowfall
@@ -90,7 +84,7 @@ class Home extends Component {
         </>
       );
     }
-  }
+  
 }
 
 export default Home;

@@ -1,0 +1,19 @@
+.centeredImage {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4.5vw;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.name {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+    color: #089cff;
+    font-weight: bold;
+}

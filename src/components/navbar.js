@@ -15,7 +15,7 @@ export default class BootstrapNav extends React.Component {
   componentDidMount() {
     this.listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 150) {
+      if (scrolled >= 210) {
         if (this.state.status !== "transparent") {
           this.setState({ status: "transparent" });
         }
@@ -32,16 +32,19 @@ export default class BootstrapNav extends React.Component {
   }
 
   render() {
+        var colorLogo = this.state.status === 'blue' ? "logoNew" : "logoBlue";
+
     return (
       <Navbar
         // bg={this.state.status === "blue" ? "blue" : ""}
         sticky="top"
         expand="md"
         style={{
-          backgroundColor: this.state.status === "blue" ? "" : "#089cff",
+          backgroundColor: this.state.status === "blue" ? "#089cff" : "",
           color: this.state.status === "blue" ? "black" : "white",
           transition: "0.3s",
         }}
+        className="animate__animated animate__fadeInDown"
       >
         <Navbar.Brand
           href="/"
@@ -49,15 +52,31 @@ export default class BootstrapNav extends React.Component {
             color: this.state.status === "blue" ? "white" : "white",
           }}
         >
-          LUCAS ABROMS
+          <img
+            src={require(`../images/${colorLogo}.png`)}
+            alt={require(`../images/${colorLogo}.png`)}
+            style={{ width: 250 }}
+          ></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/" style={{ paddingLeft: 20 }}>
+            <Nav.Link
+              href="/"
+              style={{
+                paddingLeft: 20,
+                color: this.state.status === "blue" ? "white" : "#089cff",
+              }}
+            >
               Home
             </Nav.Link>
-            <Nav.Link href="/about" style={{ paddingLeft: 20 }}>
+            <Nav.Link
+              href="/about"
+              style={{
+                paddingLeft: 20,
+                color: this.state.status === "blue" ? "white" : "#089cff",
+              }}
+            >
               About
             </Nav.Link>
             <NavDropdown
