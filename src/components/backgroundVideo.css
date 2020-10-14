@@ -16,7 +16,6 @@
     font-size: 4.5vw;
     text-align: center;
 
-    animation-delay: 2s;
 }
 .centeredNew {
     justify-content: center;
@@ -25,7 +24,15 @@
     font-size: 3vw;
     text-align: center;
     
-    animation-delay: 3s;
+}
+.centeredButton {
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 30px;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    
 }
 
 
@@ -40,26 +47,90 @@
     animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; /* don't forget to set a duration! */
 }
+.button {
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+    transition: 1s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.button:hover {
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+    transition: 1s;
+    text-decoration: none;
+    padding-top: 5spx;
+    padding-bottom: 5spx;
+
+
+}
+:root {
+  --animate-delay: 0.5s;
+}
 
 
 
 @media screen and (max-width: 600px) {
-  .centered {
-    justify-content: center;
-    margin-top: 250px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
+    .centered {
+        justify-content: center;
+        margin-top: 250px;
+        color: white;
+        font-size: 30px;
+        text-align: center;
 
-    animation-delay: 2s;
-}
-.centeredNew {
-    justify-content: center;
-    margin-top: 10;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    
-    animation-delay: 3s;
-}
+       
+    }
+    .centeredNew {
+        justify-content: center;
+        margin-top: 10;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        
+    }
+    .centeredButton {
+        justify-content: center;
+        margin-top: 10px;
+        padding-top: 30px;
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        
+    }
+    .button {
+        border-radius: 25px;
+        background-color: transparent;
+        font-size: 23px;
+        color: white;
+        border: 1px solid white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    .button:hover {
+        border-radius: 25px;
+        background-color: white;
+        font-size: 23px;
+        color: black;
+        border: 1px solid white;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
 }

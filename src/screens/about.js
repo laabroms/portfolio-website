@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BootstrapNav from '../components/navbar';
 
+
 class About extends Component {
   componentDidMount() {
     document.title = "About - Lucas Abroms";
@@ -8,10 +9,49 @@ class About extends Component {
   render() {
     return (
       <>
-      <BootstrapNav />
-    <div style={{ textAlign: "center" }}>About</div>;
-    </>
-    )
+        <BootstrapNav />
+       
+        <div style={{ textAlign: "center" }}>About</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </>
+    );
   }
 }
 
