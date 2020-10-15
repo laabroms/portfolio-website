@@ -26,6 +26,9 @@ export default function Routes() {
           <Route path="/resume" exact>
             <Resume />
           </Route>
+          <Route exact path="/discover-together" render={() => (window.location.href = "https://discover-together.com")} />
+          <Route exact path="/scholastic" render={() => (window.location.href = "https://laabroms.github.io/book_reviews_deploy/#/books")} />
+          <Route exact path="/brs" render={() => (window.location.href = "http://www.bruinrideshare.com")} />
           
         </Switch>
     </Router>

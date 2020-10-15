@@ -19,9 +19,10 @@
 }
 
 .body {
-    background: linear-gradient(transparent, #23265a);
-    height: 2000px;
+    /* background: linear-gradient(transparent, rgb(56, 56, 56)); */
+    /* height: 2000px; */
     width: 100%;
+    max-width: 100%;
 
 }
 .rowAbout {
@@ -79,9 +80,11 @@
     width: 100%;
     height: 80vh;
 }
+#root {
+    width: 100%;
+}
 
 .buttonResume {
-    align-items: center;
     border-radius: 25px;
     background-color: transparent;
     color: #f57e0c;
@@ -110,13 +113,90 @@
 
 }
 
+
 .projectsText {
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
+.buttonDiv {
+       margin-top: 50px;
+       text-align: center;
+       align-items: center;
+   }
 
+   .fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.projectCard {
+    width: 80%;
+    align-items: center;
+    border-radius: 25px;
+    height: 200px;
+    background: url('../images/discoverTile.png') no-repeat;
+    background-size: 100%;
+    margin: 5%;
+    transition: 0.3s;
+    text-align: center;
+}
+.projectCard2 {
+    width: 80%;
+    align-items: center;
+    border-radius: 25px;
+    height: 200px;
+    background: url('../images/scholasticTile.png') no-repeat;
+    background-size: 100%;
+    margin: 5%;
+    transition: 0.3s;
+    text-align: center;
+}
+.projectCard3 {
+    width: 80%;
+    align-items: center;
+    border-radius: 25px;
+    height: 200px;
+    background: url('../images/brsTile.png') no-repeat;
+    background-size: 100%;
+    margin: 5%;
+    transition: 0.3s;
+    text-align: center;
+}
+.projectCard4 {
+    width: 80%;
+    align-items: center;
+    border-radius: 25px;
+    height: 200px;
+    background: url('../images/mixrTile.png') no-repeat;
+    background-size: 100%;
+    margin: 5%;
+    transition: 0.3s;
+    text-align: center;
+    border: none;
+}
+.projectCard:hover, .projectCard2:hover, .projectCard3:hover, .projectCard4:hover {
+   opacity: 60%;
+   transition: 0.3s;
+   cursor: pointer;
+
+}
+
+.rowCard {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -124,4 +204,17 @@
        margin-top: 10px;
        text-align: center;
    }
+   .projectsText {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    }
+    .cellRegion {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 100%;
+        height: 80vh;
+    }
+   
 }
