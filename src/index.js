@@ -4,13 +4,14 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Routes from './Routes';
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from './App';
+// import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-      {/* <App /> */}
 
     <Routes />
+    {/* <App /> */}
+
   </React.StrictMode>,
   document.getElementById('root')
 );
