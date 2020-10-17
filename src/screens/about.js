@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import BootstrapNav from '../components/navbar';
 import '../css/about.css';
 import "animate.css";
 import { Col, Modal, Button} from 'react-bootstrap';
@@ -7,11 +6,16 @@ import DelayLink from "react-delay-link";
 import FadeInSection from '../components/fadeInSection';
 import {Link} from 'react-router-dom';
 import Footer from '../components/footer';
+import { Navbar, Nav } from 'react-bootstrap';
+
 
 class About extends Component {
   constructor(props) {
     super(props);
+    this.listener = null;
+   
     this.state = {
+      status: "blue",
       fadeIn: true,
       discoverShow: false,
       scholasticShow: false,
@@ -22,6 +26,23 @@ class About extends Component {
 
   componentDidMount() {
     document.title = "About - Lucas Abroms";
+    
+    this.listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 90) {
+        if (this.state.status !== "transparent") {
+          this.setState({ status: "transparent" });
+        }
+      } else {
+        if (this.state.status !== "blue") {
+          this.setState({ status: "blue" });
+        }
+      }
+    });
+  }
+
+   componentDidUpdate() {
+    document.removeEventListener("scroll", this.listener);
   }
 
   handleClick = () => {
@@ -31,6 +52,8 @@ class About extends Component {
   }
 
   render() {
+    var colorLogo = this.state.status === 'blue' ? "logoBlack" : "logoWhite";
+    var variantColor = this.state.status === 'blue' ? "light" : "dark";
     var bodyFade = this.state.fadeIn
       ? "body animate__animated animate__fadeIn"
       : "body animate__animated animate__fadeOut";
@@ -47,8 +70,79 @@ class About extends Component {
 
     return (
       <>
+      
         <div className={bodyFade}>
-          <BootstrapNav style={{width:'100%'}} />
+         <Navbar
+        // bg={this.state.status === "blue" ? "blue" : ""}
+        variant={variantColor}
+        sticky="top"
+        expand="md"
+        style={{
+          backgroundColor: this.state.status === "blue" ? "" : "black",
+          color: this.state.status === "blue" ? "black" : "white",
+          transition: "0.3s",
+        }}
+        className="animate__animated animate__fadeInDown"
+      >
+        <Navbar.Brand
+          href="/"
+          style={{
+            color: this.state.status === "blue" ? "#23265a" : "white",
+          }}
+        >
+        <DelayLink delay={2000} to="/" clickAction={this.handleClick}>
+                <img
+            src={require(`../images/${colorLogo}.png`)}
+            alt={require(`../images/${colorLogo}.png`)}
+            className='animate__animated animate__rotateInDownLeft'
+            style={{ width: 65, transition: "0.3s", }}
+          ></img>
+        </DelayLink>
+          
+          {/* <img
+            src={require('../images/orangeLogo.png')}
+            alt={require('../images/orangeLogo.png')}
+            className='animate__animated animate__rotateInDownLeft'
+            style={{ width: 65 }}
+          ></img> */}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link
+              href="/about"
+              
+              style={{
+                paddingLeft: 20,
+                marginRight: 30,
+                fontSize: 20,
+                fontWeight: 'bold',
+                color: this.state.status === "blue" ? "#23265a" : "white",
+              }}
+            >
+              About
+            </Nav.Link>
+            
+            {/* <NavDropdown
+              title="Dropdown"
+              id="basic-nav-dropdown"
+              style={{ paddingRight: 50, paddingLeft: 20 }}
+            >
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown> */}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    
+  
       
 
        
@@ -100,10 +194,9 @@ class About extends Component {
           </div>
           </FadeInSection>
 
-          <FadeInSection>
-
-            <Footer />
-          </FadeInSection>
+         
+          {/* Footer */}
+          <Footer />
 
 
 

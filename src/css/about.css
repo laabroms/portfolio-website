@@ -128,7 +128,7 @@
        align-items: center;
    }
 
-   .fade-in-section {
+.fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -153,8 +153,6 @@
     transition: 0.3s;
     text-align: center;
     margin-left: 8%;
-
-    
 }
 .projectCard2 {
     width: 80%;
@@ -202,8 +200,11 @@
    opacity: 60%;
    transition: 0.3s;
    cursor: pointer;
+   margin-left: 8%;
 
 }
+
+
 
 .rowCard {
     width: 100%;
