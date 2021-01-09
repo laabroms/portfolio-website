@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.4890c68f.chunk.css",
-    "main.js": "/static/js/main.66c63f74.chunk.js",
-    "main.js.map": "/static/js/main.66c63f74.chunk.js.map",
+    "main.js": "/static/js/main.22221fcb.chunk.js",
+    "main.js.map": "/static/js/main.22221fcb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c6e37e88.js",
     "runtime-main.js.map": "/static/js/runtime-main.c6e37e88.js.map",
     "static/css/2.994f7b2c.chunk.css": "/static/css/2.994f7b2c.chunk.css",
-    "static/js/2.c7b44f79.chunk.js": "/static/js/2.c7b44f79.chunk.js",
-    "static/js/2.c7b44f79.chunk.js.map": "/static/js/2.c7b44f79.chunk.js.map",
+    "static/js/2.b89bd283.chunk.js": "/static/js/2.b89bd283.chunk.js",
+    "static/js/2.b89bd283.chunk.js.map": "/static/js/2.b89bd283.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8baae8451e4155da0c98dcfb085a7f97.js": "/precache-manifest.8baae8451e4155da0c98dcfb085a7f97.js",
+    "precache-manifest.8b1ba184c5feecdd532d14843274e5d9.js": "/precache-manifest.8b1ba184c5feecdd532d14843274e5d9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.994f7b2c.chunk.css.map": "/static/css/2.994f7b2c.chunk.css.map",
     "static/css/main.4890c68f.chunk.css.map": "/static/css/main.4890c68f.chunk.css.map",
-    "static/js/2.c7b44f79.chunk.js.LICENSE.txt": "/static/js/2.c7b44f79.chunk.js.LICENSE.txt",
+    "static/js/2.b89bd283.chunk.js.LICENSE.txt": "/static/js/2.b89bd283.chunk.js.LICENSE.txt",
     "static/media/backgroundNew.webm": "/static/media/backgroundNew.846ea969.webm",
     "static/media/backgroundNew.mp4": "/static/media/backgroundNew.e19c2bf8.mp4",
     "static/media/brsTile.png": "/static/media/brsTile.4dcb440f.png",
     "static/media/discoverTile.png": "/static/media/discoverTile.44f89bc2.png",
     "static/media/ecommerceMarketplace.png": "/static/media/ecommerceMarketplace.8ec3a32f.png",
     "static/media/instabotTile.png": "/static/media/instabotTile.8b889c90.png",
+    "static/media/logoBlack copy.png": "/static/media/logoBlack copy.111e2d84.png",
     "static/media/logoBlack.png": "/static/media/logoBlack.111e2d84.png",
     "static/media/logoBlue.png": "/static/media/logoBlue.32ec3816.png",
     "static/media/logoNew.png": "/static/media/logoNew.31428464.png",
@@ -36,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.c6e37e88.js",
     "static/css/2.994f7b2c.chunk.css",
-    "static/js/2.c7b44f79.chunk.js",
+    "static/js/2.b89bd283.chunk.js",
     "static/css/main.4890c68f.chunk.css",
-    "static/js/main.66c63f74.chunk.js"
+    "static/js/main.22221fcb.chunk.js"
   ]
 }

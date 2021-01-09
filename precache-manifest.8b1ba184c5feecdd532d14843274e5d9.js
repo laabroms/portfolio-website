@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43515de242362f2cd7acafa94b964fcf",
+    "revision": "25bdb86a58c605356cb631ae8a726e9c",
     "url": "/index.html"
   },
   {
-    "revision": "40288cae240e51c7cd15",
+    "revision": "cedcd07187a95f109ec2",
     "url": "/static/css/2.994f7b2c.chunk.css"
   },
   {
-    "revision": "e7abe4d2a6bfefab2ff9",
+    "revision": "d2f0a87731d50431c367",
     "url": "/static/css/main.4890c68f.chunk.css"
   },
   {
-    "revision": "40288cae240e51c7cd15",
-    "url": "/static/js/2.c7b44f79.chunk.js"
+    "revision": "cedcd07187a95f109ec2",
+    "url": "/static/js/2.b89bd283.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/static/js/2.c7b44f79.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b89bd283.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7abe4d2a6bfefab2ff9",
-    "url": "/static/js/main.66c63f74.chunk.js"
+    "revision": "d2f0a87731d50431c367",
+    "url": "/static/js/main.22221fcb.chunk.js"
   },
   {
     "revision": "35ec47dfee4c65c275be",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8b889c90ad2004a9975572800530096e",
     "url": "/static/media/instabotTile.8b889c90.png"
+  },
+  {
+    "revision": "111e2d84c4d70b0ba3cb80d99397035a",
+    "url": "/static/media/logoBlack copy.111e2d84.png"
   },
   {
     "revision": "111e2d84c4d70b0ba3cb80d99397035a",
