@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0a71f42605dcfc16adb1fa013ea314b",
+    "revision": "ad5b33c50611be047f15969c88ce31a7",
     "url": "/index.html"
   },
   {
-    "revision": "b097e9f1f56809a440fe",
+    "revision": "dd8d29094b638b2b7a58",
     "url": "/static/css/2.994f7b2c.chunk.css"
   },
   {
-    "revision": "d4ea334616db75cf7a61",
-    "url": "/static/css/main.4890c68f.chunk.css"
+    "revision": "193f8db569856d408ffb",
+    "url": "/static/css/main.39c6c336.chunk.css"
   },
   {
-    "revision": "b097e9f1f56809a440fe",
-    "url": "/static/js/2.e781743c.chunk.js"
+    "revision": "dd8d29094b638b2b7a58",
+    "url": "/static/js/2.165e422a.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/static/js/2.e781743c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.165e422a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d4ea334616db75cf7a61",
-    "url": "/static/js/main.ee01c648.chunk.js"
+    "revision": "193f8db569856d408ffb",
+    "url": "/static/js/main.c86f7869.chunk.js"
   },
   {
     "revision": "35ec47dfee4c65c275be",
@@ -96,11 +96,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/purpleLogo.91964edc.png"
   },
   {
-    "revision": "dfc39d3758aee34045bf119bbd0a071c",
-    "url": "/static/media/resume.dfc39d37.png"
+    "revision": "2bfa1b8df3ec12052953aeb54fb144aa",
+    "url": "/static/media/resume.2bfa1b8d.png"
   },
   {
     "revision": "255a30320ff1fab1d19fb90ffe66ceab",
     "url": "/static/media/scholasticTile.255a3032.png"
+  },
+  {
+    "revision": "bf97931e6bcc5a4cf2dd145a8ac5d952",
+    "url": "/static/media/shotdoc.bf97931e.png"
   }
 ]);

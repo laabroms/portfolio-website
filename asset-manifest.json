@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4890c68f.chunk.css",
-    "main.js": "/static/js/main.ee01c648.chunk.js",
-    "main.js.map": "/static/js/main.ee01c648.chunk.js.map",
+    "main.css": "/static/css/main.39c6c336.chunk.css",
+    "main.js": "/static/js/main.c86f7869.chunk.js",
+    "main.js.map": "/static/js/main.c86f7869.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c6e37e88.js",
     "runtime-main.js.map": "/static/js/runtime-main.c6e37e88.js.map",
     "static/css/2.994f7b2c.chunk.css": "/static/css/2.994f7b2c.chunk.css",
-    "static/js/2.e781743c.chunk.js": "/static/js/2.e781743c.chunk.js",
-    "static/js/2.e781743c.chunk.js.map": "/static/js/2.e781743c.chunk.js.map",
+    "static/js/2.165e422a.chunk.js": "/static/js/2.165e422a.chunk.js",
+    "static/js/2.165e422a.chunk.js.map": "/static/js/2.165e422a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c454d1e0f2b7a953e0bf76f7546bc854.js": "/precache-manifest.c454d1e0f2b7a953e0bf76f7546bc854.js",
+    "precache-manifest.e93e129186ab666b886d31aaf2ef1d0e.js": "/precache-manifest.e93e129186ab666b886d31aaf2ef1d0e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.994f7b2c.chunk.css.map": "/static/css/2.994f7b2c.chunk.css.map",
-    "static/css/main.4890c68f.chunk.css.map": "/static/css/main.4890c68f.chunk.css.map",
-    "static/js/2.e781743c.chunk.js.LICENSE.txt": "/static/js/2.e781743c.chunk.js.LICENSE.txt",
+    "static/css/main.39c6c336.chunk.css.map": "/static/css/main.39c6c336.chunk.css.map",
+    "static/js/2.165e422a.chunk.js.LICENSE.txt": "/static/js/2.165e422a.chunk.js.LICENSE.txt",
     "static/media/backgroundNew.webm": "/static/media/backgroundNew.846ea969.webm",
     "static/media/backgroundNew.mp4": "/static/media/backgroundNew.e19c2bf8.mp4",
     "static/media/brsTile.png": "/static/media/brsTile.4dcb440f.png",
@@ -31,14 +31,15 @@
     "static/media/portrait.png": "/static/media/portrait.61b1a744.png",
     "static/media/portraitSquare.png": "/static/media/portraitSquare.831e8ec7.png",
     "static/media/purpleLogo.png": "/static/media/purpleLogo.91964edc.png",
-    "static/media/resume.png": "/static/media/resume.dfc39d37.png",
-    "static/media/scholasticTile.png": "/static/media/scholasticTile.255a3032.png"
+    "static/media/resume.png": "/static/media/resume.2bfa1b8d.png",
+    "static/media/scholasticTile.png": "/static/media/scholasticTile.255a3032.png",
+    "static/media/shotdoc.png": "/static/media/shotdoc.bf97931e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c6e37e88.js",
     "static/css/2.994f7b2c.chunk.css",
-    "static/js/2.e781743c.chunk.js",
-    "static/css/main.4890c68f.chunk.css",
-    "static/js/main.ee01c648.chunk.js"
+    "static/js/2.165e422a.chunk.js",
+    "static/css/main.39c6c336.chunk.css",
+    "static/js/main.c86f7869.chunk.js"
   ]
 }
