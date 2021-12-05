@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerCenter {
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-between;
+    display: flex;
+}
